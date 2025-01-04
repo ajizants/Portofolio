@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth focus:scroll-auto">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,122 +7,228 @@
 
     <style src="./style.css"></style>
 
-    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
+      rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="./main.js"></script>
   </head>
-  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-    <div class="px-40">
-      <nav class="sticky top-0 bg-white border-gray-200 dark:bg-gray-500">
-        <div class="hidden md:flex md:flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <!-- <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" /> -->
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6 text-gray-800 dark:text-white">
-              <path d="M16 5V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v1H4a2 2 0 0 0-2 2v11a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2h-4Zm-6-1h4v1h-4V4ZM4 18v-7h16v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Zm0-11h16v2H4V7Z" />
-            </svg>
+  <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 poppins-regular">
+    <div id="#"></div>
+    <header
+      class="sticky w-screen top-0 left-0 py-4 px-[10%] space-x-3 rtl:space-x-reverse items-center z-index-100 hidden md:flex md:flex-wrap justify-between backdrop-blur-sm bg-white/30 dark:bg-gray-900/30">
+      <!-- <nav class="fixed w-screen top-0 px-40 bg-white border-gray-200 dark:bg-gray-900 bg-transparent-10"> -->
+      <!-- <div class="hidden md:flex md:flex-wrap items-center justify-between mx-auto p-4"> -->
+      <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse cursor-default">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          class="w-6 h-6 text-gray-800 dark:text-white">
+          <path
+            d="M16 5V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v1H4a2 2 0 0 0-2 2v11a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2h-4Zm-6-1h4v1h-4V4ZM4 18v-7h16v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Zm0-11h16v2H4V7Z" />
+        </svg>
+        <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white doSlideRight"
+          >Portofolio.</span
+        >
+      </a>
+      <button
+        class="lg:hidden inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-800 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+        data-collapse-toggle="navbar-default"
+        type="button"
+        aria-controls="navbar-default"
+        aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 17 14">
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M1 1h15M1 7h15M1 13h15" />
+        </svg>
+      </button>
 
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Portofolio</span>
-          </a>
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-default"
-            aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-          </button>
-          <div class="hidden absolute right-60 w-full lg:block lg:w-auto" id="navbar-default">
-            <ul
-              class="max w-full font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-24 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-              <li>
-                <a
-                  href="#about"
-                  class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <strong class="absolute group-hover:translate-y-14 left-1 ease-in-out duration-300"> About </strong>
-                  <span class="px-3 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
-                    <svg
-                      class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      viewBox="0 0 24 24">
-                      <path fill-rule="evenodd" d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z" clip-rule="evenodd" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#skills"
-                  class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <strong class="absolute group-hover:translate-y-14 left-1 ease-in-out duration-300"> Skills </strong>
-                  <span class="px-3 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
-                    <svg
-                      class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
-                      aria-hidden="true"
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="currentColor"
-                      viewBox="0 0 24 24">
-                      <path
-                        d="M11 21V2.352A3.451 3.451 0 0 0 9.5 2a3.5 3.5 0 0 0-3.261 2.238A3.5 3.5 0 0 0 4.04 8.015a3.518 3.518 0 0 0-.766 1.128c-.042.1-.064.209-.1.313a3.34 3.34 0 0 0-.106.344 3.463 3.463 0 0 0 .02 1.468A4.017 4.017 0 0 0 2.3 12.5l-.015.036a3.861 3.861 0 0 0-.216.779A3.968 3.968 0 0 0 2 14c.003.24.027.48.072.716a4 4 0 0 0 .235.832c.006.014.015.027.021.041a3.85 3.85 0 0 0 .417.727c.105.146.219.285.342.415.072.076.148.146.225.216.1.091.205.179.315.26.11.081.2.14.308.2.02.013.039.028.059.04v.053a3.506 3.506 0 0 0 3.03 3.469 3.426 3.426 0 0 0 4.154.577A.972.972 0 0 1 11 21Zm10.934-7.68a3.956 3.956 0 0 0-.215-.779l-.017-.038a4.016 4.016 0 0 0-.79-1.235 3.417 3.417 0 0 0 .017-1.468 3.387 3.387 0 0 0-.1-.333c-.034-.108-.057-.22-.1-.324a3.517 3.517 0 0 0-.766-1.128 3.5 3.5 0 0 0-2.202-3.777A3.5 3.5 0 0 0 14.5 2a3.451 3.451 0 0 0-1.5.352V21a.972.972 0 0 1-.184.546 3.426 3.426 0 0 0 4.154-.577A3.506 3.506 0 0 0 20 17.5v-.049c.02-.012.039-.027.059-.04.106-.064.208-.13.308-.2s.214-.169.315-.26c.077-.07.153-.14.225-.216a4.007 4.007 0 0 0 .459-.588c.115-.176.215-.361.3-.554.006-.014.015-.027.021-.041.087-.213.156-.434.205-.659.013-.057.024-.115.035-.173.046-.237.07-.478.073-.72a3.948 3.948 0 0 0-.066-.68Z" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#projects"
-                  class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <strong class="absolute group-hover:translate-y-14 -left-1 ease-in-out duration-300"> Projects </strong>
-                  <span class="px-2 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M11 21V2.352A3.451 3.451 0 0 0 9.5 2a3.5 3.5 0 0 0-3.261 2.238A3.5 3.5 0 0 0 4.04 8.015a3.518 3.518 0 0 0-.766 1.128c-.042.1-.064.209-.1.313a3.34 3.34 0 0 0-.106.344 3.463 3.463 0 0 0 .02 1.468A4.017 4.017 0 0 0 2.3 12.5l-.015.036a3.861 3.861 0 0 0-.216.779A3.968 3.968 0 0 0 2 14c.003.24.027.48.072.716a4 4 0 0 0 .235.832c.006.014.015.027.021.041a3.85 3.85 0 0 0 .417.727c.105.146.219.285.342.415.072.076.148.146.225.216.1.091.205.179.315.26.11.081.2.14.308.2.02.013.039.028.059.04v.053a3.506 3.506 0 0 0 3.03 3.469 3.426 3.426 0 0 0 4.154.577A.972.972 0 0 1 11 21Zm10.934-7.68a3.956 3.956 0 0 0-.215-.779l-.017-.038a4.016 4.016 0 0 0-.79-1.235 3.417 3.417 0 0 0 .017-1.468 3.387 3.387 0 0 0-.1-.333c-.034-.108-.057-.22-.1-.324a3.517 3.517 0 0 0-.766-1.128 3.5 3.5 0 0 0-2.202-3.777A3.5 3.5 0 0 0 14.5 2a3.451 3.451 0 0 0-1.5.352V21a.972.972 0 0 1-.184.546 3.426 3.426 0 0 0 4.154-.577A3.506 3.506 0 0 0 20 17.5v-.049c.02-.012.039-.027.059-.04.106-.064.208-.13.308-.2s.214-.169.315-.26c.077-.07.153-.14.225-.216a4.007 4.007 0 0 0 .459-.588c.115-.176.215-.361.3-.554.006-.014.015-.027.021-.041.087-.213.156-.434.205-.659.013-.057.024-.115.035-.173.046-.237.07-.478.073-.72a3.948 3.948 0 0 0-.066-.68Z" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                  <strong class="absolute group-hover:translate-y-14 left-1 ease-in-out duration-300"> Contact </strong>
-                  <span class="px-2 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
-                    <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                      <path
-                        d="M11 21V2.352A3.451 3.451 0 0 0 9.5 2a3.5 3.5 0 0 0-3.261 2.238A3.5 3.5 0 0 0 4.04 8.015a3.518 3.518 0 0 0-.766 1.128c-.042.1-.064.209-.1.313a3.34 3.34 0 0 0-.106.344 3.463 3.463 0 0 0 .02 1.468A4.017 4.017 0 0 0 2.3 12.5l-.015.036a3.861 3.861 0 0 0-.216.779A3.968 3.968 0 0 0 2 14c.003.24.027.48.072.716a4 4 0 0 0 .235.832c.006.014.015.027.021.041a3.85 3.85 0 0 0 .417.727c.105.146.219.285.342.415.072.076.148.146.225.216.1.091.205.179.315.26.11.081.2.14.308.2.02.013.039.028.059.04v.053a3.506 3.506 0 0 0 3.03 3.469 3.426 3.426 0 0 0 4.154.577A.972.972 0 0 1 11 21Zm10.934-7.68a3.956 3.956 0 0 0-.215-.779l-.017-.038a4.016 4.016 0 0 0-.79-1.235 3.417 3.417 0 0 0 .017-1.468 3.387 3.387 0 0 0-.1-.333c-.034-.108-.057-.22-.1-.324a3.517 3.517 0 0 0-.766-1.128 3.5 3.5 0 0 0-2.202-3.777A3.5 3.5 0 0 0 14.5 2a3.451 3.451 0 0 0-1.5.352V21a.972.972 0 0 1-.184.546 3.426 3.426 0 0 0 4.154-.577A3.506 3.506 0 0 0 20 17.5v-.049c.02-.012.039-.027.059-.04.106-.064.208-.13.308-.2s.214-.169.315-.26c.077-.07.153-.14.225-.216a4.007 4.007 0 0 0 .459-.588c.115-.176.215-.361.3-.554.006-.014.015-.027.021-.041.087-.213.156-.434.205-.659.013-.057.024-.115.035-.173.046-.237.07-.478.073-.72a3.948 3.948 0 0 0-.066-.68Z" />
-                    </svg>
-                  </span>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <nav class="hidden relative w-full lg:block lg:w-auto" id="navbar-default">
+        <ul
+          class="absolute right-96 max w-full font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-24 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <a
+              href="#about"
+              class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <strong
+                class="absolute group-hover:translate-y-10 group-hover:scale-125 left-1 ease-in-out duration-300">
+                About
+              </strong>
+              <span
+                class="px-3 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
+                <svg
+                  class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    fill-rule="evenodd"
+                    d="M12 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-2 9a4 4 0 0 0-4 4v1a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-1a4 4 0 0 0-4-4h-4Z"
+                    clip-rule="evenodd" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <strong
+                class="absolute group-hover:translate-y-10 group-hover:scale-125 left-1 ease-in-out duration-300">
+                Skills
+              </strong>
+              <span
+                class="px-3 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
+                <svg
+                  class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  fill="currentColor"
+                  viewBox="0 0 24 24">
+                  <path
+                    d="M11 21V2.352A3.451 3.451 0 0 0 9.5 2a3.5 3.5 0 0 0-3.261 2.238A3.5 3.5 0 0 0 4.04 8.015a3.518 3.518 0 0 0-.766 1.128c-.042.1-.064.209-.1.313a3.34 3.34 0 0 0-.106.344 3.463 3.463 0 0 0 .02 1.468A4.017 4.017 0 0 0 2.3 12.5l-.015.036a3.861 3.861 0 0 0-.216.779A3.968 3.968 0 0 0 2 14c.003.24.027.48.072.716a4 4 0 0 0 .235.832c.006.014.015.027.021.041a3.85 3.85 0 0 0 .417.727c.105.146.219.285.342.415.072.076.148.146.225.216.1.091.205.179.315.26.11.081.2.14.308.2.02.013.039.028.059.04v.053a3.506 3.506 0 0 0 3.03 3.469 3.426 3.426 0 0 0 4.154.577A.972.972 0 0 1 11 21Zm10.934-7.68a3.956 3.956 0 0 0-.215-.779l-.017-.038a4.016 4.016 0 0 0-.79-1.235 3.417 3.417 0 0 0 .017-1.468 3.387 3.387 0 0 0-.1-.333c-.034-.108-.057-.22-.1-.324a3.517 3.517 0 0 0-.766-1.128 3.5 3.5 0 0 0-2.202-3.777A3.5 3.5 0 0 0 14.5 2a3.451 3.451 0 0 0-1.5.352V21a.972.972 0 0 1-.184.546 3.426 3.426 0 0 0 4.154-.577A3.506 3.506 0 0 0 20 17.5v-.049c.02-.012.039-.027.059-.04.106-.064.208-.13.308-.2s.214-.169.315-.26c.077-.07.153-.14.225-.216a4.007 4.007 0 0 0 .459-.588c.115-.176.215-.361.3-.554.006-.014.015-.027.021-.041.087-.213.156-.434.205-.659.013-.057.024-.115.035-.173.046-.237.07-.478.073-.72a3.948 3.948 0 0 0-.066-.68Z" />
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <strong
+                class="absolute group-hover:translate-y-10 group-hover:scale-125 -left-2 ease-in-out duration-300">
+                Projects
+              </strong>
+              <span
+                class="px-2 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+                  <path
+                    d="M5 22h14c1.103 0 2-.897 2-2V5c0-1.103-.897-2-2-2h-2a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1H5c-1.103 0-2 .897-2 2v15c0 1.103.897 2 2 2zM5 5h2v2h10V5h2v15H5V5z"></path>
+                  <path
+                    d="m11 13.586-1.793-1.793-1.414 1.414L11 16.414l5.207-5.207-1.414-1.414z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              <strong
+                class="absolute group-hover:translate-y-10 group-hover:scale-125 -left-2 ease-in-out duration-300">
+                Contact
+              </strong>
+              <span
+                class="px-2 absolute top-0 hidden group-hover:inline-block ease-in-out duration-300">
+                <svg
+                  class="w-6 h-6 hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="currentColor">
+                  <path d="M15.793 6.793 13 4v7h7l-2.793-2.793 4.5-4.5-1.414-1.414z"></path>
+                  <path
+                    d="M16.422 13.443a1.001 1.001 0 0 0-1.391.043l-2.392 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.86 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1.001 1.001 0 0 0-.291.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.324 21 17.705 21c.203 0 .326-.006.359-.008a.99.99 0 0 0 .648-.291l1.861-2.171a1.001 1.001 0 0 0-.086-1.391l-4.065-3.696z"></path>
+                </svg>
+              </span>
+            </a>
+          </li>
+        </ul>
       </nav>
-
+      <!-- </div> -->
+      <!-- </nav> -->
+    </header>
+    <div class="max-w-7xl mx-auto px-6">
       <!-- About Section -->
-      <section id="about" class="min-h-screen py-16 bg-white dark:bg-slate-500">
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
-          <h2 class="text-3xl font-bold text-center mb-6">About Me</h2>
+      <section
+        id="about"
+        class="md:flex justify-between items-center align-middle md:h-[100vh] py-6 md:px-6 mx-auto bg-white dark:bg-slate-500 about">
+        <div class="mx-auto px-6 md:px-12 lg:px-20">
+          <img src="./img/aji.jpg" alt="Aji Santoso" class="rounded-xl" />
+        </div>
+        <div class="mx-auto px-6 md:px-12 lg:px-20 mt-5 md:mt-0 about-content">
+          <h2 class="text-xl font-bold">Hello, It's Me</h2>
+          <h1 class="text-4xl font-bold">Aji Santoso</h1>
+          <h3 class="text-xl font-bold">
+            I'm a web developer and I'm passionate about
+            <span class="text-fuchsia-500"> creating beautiful and functional websites.</span>
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, deserunt voluptatum quos
+            rem hic quis fuga. Voluptas, sunt eos nam illum deleniti exercitationem ratione unde ab
+            fugiat magnam at impedit.
+          </p>
+          <div class="social-media text-2xl space-x-3 my-4">
+            <a
+              href="#"
+              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
+              title="FB"
+              ><i class="bx bxl-facebook-circle group-hover:scale-125"></i
+            ></a>
+            <a
+              href="#"
+              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
+              title="IG"
+              ><i class="bx bxl-instagram-alt group-hover:scale-125"></i
+            ></a>
+            <a
+              href="#"
+              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
+              title="LinkedIn"
+              ><i class="bx bxl-linkedin-square group-hover:scale-125"></i
+            ></a>
+            <a
+              href="#"
+              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
+              title="Git"
+              ><i class="bx bxl-github group-hover:scale-125"></i
+            ></a>
+          </div>
         </div>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects" class="min-h-screen py-16 bg-gray-50">
+      <section id="projects" class="min-h-screen py-16">
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
           <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
-              {/* <image src="" alt="Project 1" class="w-full h-48 object-cover" width="{100}" height="{100}" /> */}
+              <image
+                src=""
+                alt="Project 1"
+                class="w-full h-48 object-cover"
+                width="{100}"
+                height="{100}" />
               <div class="p-4">
                 <h3 class="text-xl font-semibold">Project Title 1</h3>
                 <p class="text-gray-600 mt-2">Brief description of the project and its purpose.</p>
@@ -133,58 +239,107 @@
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="min-h-screen py-16 bg-white">
+      <section id="skills" class="min-h-screen py-16">
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
           <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
           <div class="flex flex-wrap justify-center gap-6">
-            <span class="px-4 py-2 bg-gray-200 rounded-full text-gray-800 font-medium">Skill 1</span>
-            <span class="px-4 py-2 bg-gray-200 rounded-full text-gray-800 font-medium">Skill 2</span>
-            <span class="px-4 py-2 bg-gray-200 rounded-full text-gray-800 font-medium">Skill 3</span>
+            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 1</span>
+            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 2</span>
+            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 3</span>
             <!-- Add more skills as needed -->
           </div>
         </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="min-h-screen py-16 bg-gray-50">
+      <section id="contact" class="min-h-screen py-16">
         <div class="container mx-auto px-6 md:px-12 lg:px-20">
           <h2 class="text-3xl font-bold text-center mb-6">Contact</h2>
           <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
             <div class="mb-4">
               <label htmlFor="name" class="block text-gray-700 font-medium"> Name </label>
-              <input type="text" id="name" name="name" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" />
+              <input
+                title="name"
+                type="text"
+                id="name"
+                name="name"
+                class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" />
             </div>
             <div class="mb-4">
               <label htmlFor="email" class="block text-gray-700 font-medium"> Email </label>
-              <input type="email" id="email" name="email" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" />
+              <input
+                title="email"
+                type="email"
+                id="email"
+                name="email"
+                class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200" />
             </div>
             <div class="mb-4">
               <label htmlFor="message" class="block text-gray-700 font-medium"> Message </label>
-              <textarea id="message" name="message" rows="4" class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200"></textarea>
+              <textarea
+                placeholder="Enter your message here"
+                id="message"
+                name="message"
+                rows="4"
+                class="w-full mt-2 p-3 border rounded-lg focus:outline-none focus:ring focus:ring-blue-200"></textarea>
             </div>
-            <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">Send Message</button>
+            <button
+              type="submit"
+              class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-blue-700 transition">
+              Send Message
+            </button>
           </form>
         </div>
       </section>
     </div>
-    <div class="md:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
+    <div
+      class="md:hidden fixed bottom-0 left-0 z-50 w-full h-16 bg-white border-t border-gray-200 dark:bg-gray-900 dark:border-gray-600">
       <div class="grid h-full max-w-lg grid-cols-4 mx-auto font-medium">
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+        <button
+          type="button"
+          class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <svg
+            class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20">
             <path
               d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z" />
           </svg>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Home</span>
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            >Home</span
+          >
         </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M11.074 4 8.442.408A.95.95 0 0 0 7.014.254L2.926 4h8.148ZM9 13v-1a4 4 0 0 1 4-4h6V6a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1v-2h-6a4 4 0 0 1-4-4Z" />
-            <path d="M19 10h-6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Zm-4.5 3.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM12.62 4h2.78L12.539.41a1.086 1.086 0 1 0-1.7 1.352L12.62 4Z" />
+        <button
+          type="button"
+          class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <svg
+            class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+              d="M11.074 4 8.442.408A.95.95 0 0 0 7.014.254L2.926 4h8.148ZM9 13v-1a4 4 0 0 1 4-4h6V6a1 1 0 0 0-1-1H1a1 1 0 0 0-1 1v13a1 1 0 0 0 1 1h17a1 1 0 0 0 1-1v-2h-6a4 4 0 0 1-4-4Z" />
+            <path
+              d="M19 10h-6a2 2 0 0 0-2 2v1a2 2 0 0 0 2 2h6a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1Zm-4.5 3.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2ZM12.62 4h2.78L12.539.41a1.086 1.086 0 1 0-1.7 1.352L12.62 4Z" />
           </svg>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Wallet</span>
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            >Wallet</span
+          >
         </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+        <button
+          type="button"
+          class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <svg
+            class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 20 20">
             <path
               stroke="currentColor"
               stroke-linecap="round"
@@ -192,13 +347,27 @@
               stroke-width="2"
               d="M4 12.25V1m0 11.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M4 19v-2.25m6-13.5V1m0 2.25a2.25 2.25 0 0 0 0 4.5m0-4.5a2.25 2.25 0 0 1 0 4.5M10 19V7.75m6 4.5V1m0 11.25a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5ZM16 19v-2" />
           </svg>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Settings</span>
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            >Settings</span
+          >
         </button>
-        <button type="button" class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
-          <svg class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
+        <button
+          type="button"
+          class="inline-flex flex-col items-center justify-center px-5 hover:bg-gray-50 dark:hover:bg-gray-800 group">
+          <svg
+            class="w-5 h-5 mb-2 text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            viewBox="0 0 20 20">
+            <path
+              d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm0 5a3 3 0 1 1 0 6 3 3 0 0 1 0-6Zm0 13a8.949 8.949 0 0 1-4.951-1.488A3.987 3.987 0 0 1 9 13h2a3.987 3.987 0 0 1 3.951 3.512A8.949 8.949 0 0 1 10 18Z" />
           </svg>
-          <span class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500">Profile</span>
+          <span
+            class="text-sm text-gray-500 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-500"
+            >Profile</span
+          >
         </button>
       </div>
     </div>
