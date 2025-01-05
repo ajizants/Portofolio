@@ -2,7 +2,7 @@ tailwind.config = {
   theme: {
     extend: {
       colors: {
-        clifford: "#da373d",
+        clifford: '#da373d',
       },
     },
   },
@@ -11,27 +11,26 @@ tailwind.config = {
 // Dark mode toggle function
 function toggleDarkMode() {
   const html = document.documentElement;
-  if (html.classList.contains("dark")) {
-    html.classList.remove("dark");
-    localStorage.setItem("theme", "light");
+  if (html.classList.contains('dark')) {
+    html.classList.remove('dark');
+    localStorage.setItem('theme', 'light');
   } else {
-    html.classList.add("dark");
-    localStorage.setItem("theme", "dark");
+    html.classList.add('dark');
+    localStorage.setItem('theme', 'dark');
   }
 }
 
 // Set initial theme based on user preference or system preference
-document.addEventListener("DOMContentLoaded", () => {
-  const userTheme = localStorage.getItem("theme");
-  const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+document.addEventListener('DOMContentLoaded', () => {
+  const userTheme = localStorage.getItem('theme');
+  const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  if (userTheme === "dark" || (!userTheme && systemTheme)) {
-    document.documentElement.classList.add("dark");
+  if (userTheme === 'dark' || (!userTheme && systemTheme)) {
+    document.documentElement.classList.add('dark');
   } else {
-    document.documentElement.classList.remove("dark");
+    document.documentElement.classList.remove('dark');
   }
 });
-
 
 document.querySelectorAll('a.smooth-link').forEach((anchor) => {
   anchor.addEventListener('click', function (e) {
@@ -43,4 +42,12 @@ document.querySelectorAll('a.smooth-link').forEach((anchor) => {
       targetElement.scrollIntoView({ behavior: 'smooth' });
     }
   });
+});
+
+var typed = new Typed('#element', {
+  strings: ['creating beautiful websites,', 'creating functional websites,', 'and editing video.'],
+  typeSpeed: 100,
+  backSpeed: 50,
+  backDelay: 1000,
+  loop: true,
 });

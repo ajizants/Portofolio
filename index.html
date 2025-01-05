@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aji Santoso</title>
 
-    <style src="./style.css"></style>
-
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css"
       rel="stylesheet" />
@@ -16,22 +14,18 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
-    <script src="./main.js"></script>
+    <link rel="stylesheet" href="/style.css" />
   </head>
   <body class="bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 poppins-regular">
     <div id="#"></div>
     <header
-      class="sticky w-screen top-0 left-0 py-4 px-[10%] space-x-3 rtl:space-x-reverse items-center z-index-100 hidden md:flex md:flex-wrap justify-between backdrop-blur-sm bg-white/30 dark:bg-gray-900/30">
-      <!-- <nav class="fixed w-screen top-0 px-40 bg-white border-gray-200 dark:bg-gray-900 bg-transparent-10"> -->
-      <!-- <div class="hidden md:flex md:flex-wrap items-center justify-between mx-auto p-4"> -->
+      class="sticky w-screen top-0 left-0 py-4 px-[10%] space-x-3 rtl:space-x-reverse items-center z-50 hidden md:flex md:flex-wrap justify-between backdrop-blur-sm bg-white/30 dark:bg-gray-900/30">
       <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse cursor-default">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
           fill="currentColor"
-          class="w-6 h-6 text-gray-800 dark:text-white">
+          class="w-6 h-6 text-gray-800 dark:text-white fadein">
           <path
             d="M16 5V4a2 2 0 0 0-2-2H10a2 2 0 0 0-2 2v1H4a2 2 0 0 0-2 2v11a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a2 2 0 0 0-2-2h-4Zm-6-1h4v1h-4V4ZM4 18v-7h16v7a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1Zm0-11h16v2H4V7Z" />
         </svg>
@@ -64,7 +58,7 @@
       <nav class="hidden relative w-full lg:block lg:w-auto" id="navbar-default">
         <ul
           class="absolute right-96 max w-full font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-24 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-          <li>
+          <li class="doSlideDown delay-1">
             <a
               href="#about"
               class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
@@ -90,7 +84,7 @@
               </span>
             </a>
           </li>
-          <li>
+          <li class="doSlideDown delay-2">
             <a
               href="#skills"
               class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
@@ -114,7 +108,7 @@
               </span>
             </a>
           </li>
-          <li>
+          <li class="doSlideDown delay-3">
             <a
               href="#projects"
               class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
@@ -139,7 +133,7 @@
               </span>
             </a>
           </li>
-          <li>
+          <li class="doSlideDown delay-4">
             <a
               href="#contact"
               class="relative group -top-3 block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
@@ -165,28 +159,39 @@
           </li>
         </ul>
       </nav>
-      <!-- </div> -->
-      <!-- </nav> -->
     </header>
-    <div class="max-w-7xl mx-auto px-6">
+    <div class="w-screen left-0 py-4 px-[10%]">
       <!-- About Section -->
       <section
         id="about"
-        class="md:flex justify-between items-center align-middle md:h-[100vh] py-6 md:px-6 mx-auto bg-white dark:bg-slate-500 about">
-        <div class="mx-auto px-6 md:px-12 lg:px-20">
-          <img src="./img/aji.jpg" alt="Aji Santoso" class="rounded-xl animate-bounce" />
+        class="md:flex justify-between items-center align-middle md:h-[100vh] py-6 md:px-6 mx-auto bg-white dark:bg-slate-900 about">
+        <div class="flex justify-center align-middlemx-auto w-full md:w-1/2 px-6 mt-5 md:mt-0">
+          <div class="z-10 box-foto">
+            <img class="z-1" src="./img/aji.jpg" alt="Aji Santoso" />
+          </div>
         </div>
-        <div class="mx-auto px-6 md:px-12 lg:px-20 mt-5 md:mt-0 about-content">
-          <h2 class="text-xl font-bold">Hello, It's Me</h2>
-          <h1 class="text-4xl font-bold">Aji Santoso</h1>
-          <h3 class="text-xl font-bold">
+        <div class="mx-auto w-full md:w-1/2 px-6 mt-5 md:mt-0">
+          <h2 class="text-xl font-bold doSlideLeft delay-7">Hello, It's Me</h2>
+          <h1 id="title" class="text-4xl font-bold fadein2 delay-8">Aji Santoso</h1>
+
+          <h3 class="text-xl font-bold doSlideLeft delay-7">
             I'm a web developer and I'm passionate about
-            <span class="text-fuchsia-500"> creating beautiful and functional websites.</span>
+            <span class="text-fuchsia-500 multiple-text" id="element"> </span>
           </h3>
+
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, deserunt voluptatum quos
-            rem hic quis fuga. Voluptas, sunt eos nam illum deleniti exercitationem ratione unde ab
-            fugiat magnam at impedit.
+            As a programmer, I am driven by an unwavering passion to stay at the forefront of
+            technological advancements. To me, every innovation is an opportunity to grow, and every
+            challenge is an invitation to delve deeper. With steadfast determination and boundless
+            curiosity, I am committed to crafting solutions that are not only effective but also
+            impactful.
+          </p>
+          <p hidden>
+            Sebagai seorang programer, saya memiliki semangat tak pernah padam untuk mengikuti
+            perkembangan teknologi terbaru. Bagi saya, setiap inovasi adalah peluang untuk tumbuh,
+            dan setiap tantangan adalah undangan untuk belajar lebih dalam. Dengan tekad yang kuat
+            dan rasa ingin tahu yang tak terbatas, saya berkomitmen untuk menciptakan solusi yang
+            tidak hanya efektif, tetapi juga bermakna.
           </p>
           <div class="social-media text-2xl space-x-3 my-4">
             <a
@@ -379,5 +384,10 @@
         </a>
       </div>
     </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="/main.js"></script>
   </body>
 </html>
