@@ -106,9 +106,9 @@
   font-style: italic;
 }
 
-html {
+/* html {
   scroll-behavior: smooth;
-}
+} */
 
 .box-foto {
   position: relative;
@@ -147,6 +147,14 @@ html {
   object-fit: cover;
   z-index: 1;
   rotate: 330deg;
+  border-radius: 70;
+}
+.box-foto:hover img {
+  /* position: absolute; */
+  transform: rotateX(90deg) rotateY(180deg);
+  /* object-fit: cover; */
+  /* z-index: 1; */
+  /* rotate: 330deg; */
   border-radius: 70;
 }
 
