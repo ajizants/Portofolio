@@ -147,15 +147,17 @@
   object-fit: cover;
   z-index: 1;
   rotate: 330deg;
-  border-radius: 70;
+  border-radius: 40%;
+  scale: 1.2;
+  transition: all 0.5s ease-in-out;
 }
 .box-foto:hover img {
   /* position: absolute; */
-  transform: rotateX(90deg) rotateY(180deg);
-  /* object-fit: cover; */
-  /* z-index: 1; */
-  /* rotate: 330deg; */
-  border-radius: 70;
+  transform: rotate3d(0, 0, 0, 0deg);
+  object-fit: cover;
+  border-radius: 50%;
+  scale: 1.1;
+  rotate: 320deg;
 }
 
 .doSlideRight {
@@ -166,6 +168,12 @@
 .doSlideDown {
   -webkit-animation: slideDown 1s ease forwards;
   animation: slideDown 1s ease forwards;
+  opacity: 0;
+  z-index: 1 !important;
+}
+.doSlideUp {
+  -webkit-animation: slideUp 1s ease forwards;
+  animation: slideUp 1s ease forwards;
   opacity: 0;
   z-index: 1 !important;
 }
@@ -187,8 +195,8 @@
   z-index: 1 !important;
 }
 .fadein2 {
-  -webkit-animation: FadeIn2 3s ease-in-out;
-  animation: FadeIn2 3s ease-in-out;
+  -webkit-animation: FadeIn2 2s ease-in-out;
+  animation: FadeIn2 2s ease-in-out;
 }
 
 .delay-1 {
@@ -214,6 +222,12 @@
 }
 .delay-7 {
   animation-delay: 1.2s;
+}
+.delay-8 {
+  animation-delay: 1.4s;
+}
+.delay-9 {
+  animation-delay: 1.6s;
 }
 
 @keyframes slideLeft {
@@ -273,6 +287,24 @@
   }
 }
 
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    -moz-transform: translateY(100px);
+    -ms-transform: translateY(100px);
+    -o-transform: translateY(100px);
+    transform: translateY(100px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
 @keyframes slideDown {
   0% {
     opacity: 0;
@@ -305,4 +337,17 @@
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+.parallax {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-link.active {
+  color: #2563eb !important; /* Tailwind's blue-700 */
+  font-weight: bold;
 }

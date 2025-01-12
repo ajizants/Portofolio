@@ -51,3 +51,59 @@ var typed = new Typed('#element', {
   backDelay: 1000,
   loop: true,
 });
+
+const parallaxElements = document.querySelectorAll('.parallax');
+
+window.addEventListener('scroll', () => {
+  parallaxElements.forEach((el, index) => {
+    const speed = index % 2 === 0 ? 0.3 : 0.6; // Set different speed for each section
+    el.style.transform = `translateY(${window.scrollY * speed}px)`;
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const navLinks = document.querySelectorAll('.nav-link');
+  const sections = document.querySelectorAll('section');
+
+  // Scroll event listener
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.offsetHeight;
+
+      // Menggunakan scrollY sebagai pengganti pageYOffset
+      if (window.scrollY >= sectionTop - sectionHeight / 3) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    // Tambahkan dan hapus kelas 'active'
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href') === `#${current}`) {
+        link.classList.add('active');
+      }
+    });
+  });
+
+  // Click event listener
+  navLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetId = link.getAttribute('href').substring(1);
+      const targetSection = document.getElementById(targetId);
+
+      // Scroll ke bagian yang dituju dengan smooth scrolling
+      targetSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+
+      // Tambahkan kelas 'active' ke link yang diklik
+      navLinks.forEach((nav) => nav.classList.remove('active'));
+      link.classList.add('active');
+    });
+  });
+});

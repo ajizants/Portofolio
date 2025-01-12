@@ -66,8 +66,7 @@
           <li class="doSlideDown delay-1">
             <a
               href="#about"
-              class="relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-              <strong
+              class="nav-link active relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">              <strong
                 class="absolute group-hover:translate-y-10 group-hover:scale-125 ease-in-out duration-300">
                 About
               </strong>
@@ -93,7 +92,7 @@
           <li class="doSlideDown delay-2">
             <a
               href="#skills"
-              class="relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              class="nav-link relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <strong
                 class="absolute left-1 group-hover:translate-y-10 group-hover:scale-125 ease-in-out duration-300">
                 Skills
@@ -117,7 +116,7 @@
           <li class="doSlideDown delay-3">
             <a
               href="#projects"
-              class="relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              class="nav-link relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <strong
                 class="absolute group-hover:translate-y-10 group-hover:scale-125 ease-in-out duration-300">
                 Projects
@@ -143,7 +142,7 @@
           <li class="doSlideDown delay-4">
             <a
               href="#contact"
-              class="relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
+              class="nav-link relative group -top-3 block py-2 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
               <strong
                 class="absolute group-hover:translate-y-10 group-hover:scale-125 ease-in-out duration-300">
                 Contact
@@ -168,19 +167,19 @@
         </ul>
       </nav>
     </header>
-    <div class="w-screen left-0 px-[10%]">
+    <div class="w-screen mt-12 md:mt-0 left-0 px-[10%]">
       <!-- About Section -->
       <section
         id="about"
-        class="md:flex justify-between items-center align-middle md:h-[90vh] mx-auto bg-white dark:bg-slate-900 about">
+        class="section md:flex justify-between items-center align-middle md:h-[90vh] mx-auto bg-white dark:bg-slate-900 about">
         <div class="flex justify-center align-middlemx-auto w-full md:w-1/2 px-6">
-          <div class="z-10 box-foto">
+          <div class="z-10 box-foto fadein">
             <img class="z-1" src="./img/aji.jpg" alt="Aji Santoso" />
           </div>
         </div>
         <div class="mx-auto w-full md:w-1/2 px-6">
           <h2 class="text-xl font-bold doSlideLeft delay-7">Hello, It's Me</h2>
-          <h1 id="title" class="text-4xl font-bold fadein2 delay-8">Aji Santoso</h1>
+          <h1 id="title" class="text-4xl font-bold fadein2">Aji Santoso</h1>
 
           <h3 class="text-xl font-bold doSlideLeft delay-7">
             I'm a web developer and I'm passionate about
@@ -188,51 +187,156 @@
           </h3>
 
           <p>
-            As a programmer, I am driven by an unwavering passion to stay at the forefront of
-            technological advancements. To me, every innovation is an opportunity to grow, and every
-            challenge is an invitation to delve deeper. With steadfast determination and boundless
+           <sapan class="doSlideUp delay-7">As a programmer, I am driven by an unwavering passion to stay at the forefront of
+            technological advancements. To me, every innovation is an opportunity to grow, and every</span>
+            <span class="doSlideUp delay-8">challenge is an invitation to delve deeper. With steadfast determination and boundless
             curiosity, I am committed to crafting solutions that are not only effective but also
-            impactful.
+            impactful.</span>
           </p>
-          <p hidden>
+          <p class="hidden">
             Sebagai seorang programer, saya memiliki semangat tak pernah padam untuk mengikuti
             perkembangan teknologi terbaru. Bagi saya, setiap inovasi adalah peluang untuk tumbuh,
             dan setiap tantangan adalah undangan untuk belajar lebih dalam. Dengan tekad yang kuat
             dan rasa ingin tahu yang tak terbatas, saya berkomitmen untuk menciptakan solusi yang
             tidak hanya efektif, tetapi juga bermakna.
           </p>
-          <div class="social-media text-2xl space-x-3 my-4">
+          <div class="social-media inline-flex text-2xl space-x-8 my-4">
             <a
               href="#"
-              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
-              title="FB"
-              ><i class="bx bxl-facebook-circle group-hover:scale-125"></i
-            ></a>
+              class="border-white flex items-center justify-center w-12 h-12 border rounded-full hover:bg-blue-500 group"
+              title="FB">
+              <i class="bx bxl-facebook-circle text-2xl group-hover:scale-125"></i>
+            </a>
             <a
               href="#"
-              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
-              title="IG"
-              ><i class="bx bxl-instagram-alt group-hover:scale-125"></i
-            ></a>
+              class="border-white flex items-center justify-center w-12 h-12 border rounded-full hover:bg-blue-500 group"
+              title="IG">
+              <i class="bx bxl-instagram-alt group-hover:scale-125"></i>
+            </a>
             <a
               href="#"
-              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
-              title="LinkedIn"
-              ><i class="bx bxl-linkedin-square group-hover:scale-125"></i
-            ></a>
+              class="border-white flex items-center justify-center w-12 h-12 border rounded-full hover:bg-blue-500 group"
+              title="LinkedIn">
+              <i class="bx bxl-linkedin-square group-hover:scale-125"></i>
+            </a>
             <a
               href="#"
-              class="border-white border rounded-full px-3 p-2 hover:bg-blue-500 group"
-              title="Git"
-              ><i class="bx bxl-github group-hover:scale-125"></i
-            ></a>
+              class="border-white flex items-center justify-center w-12 h-12 border rounded-full hover:bg-blue-500 group"
+              title="Github">
+              <i class="bx bxl-github group-hover:scale-125"></i>
+            </a>
           </div>
         </div>
       </section>
 
+      <!-- Skills Section -->
+<section id="skills" class="min-h-screen py-16 md:h-[90vh] mx-auto bg-white dark:bg-slate-900">
+  <div class=" mx-auto px-6 md:px-12 lg:px-20">
+    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Skill Item -->
+      <div class="relative group">
+        <img
+          src="./img/html5.svg"
+          alt="HTML"
+          class="w-16 h-16 text-gray-400 group-hover:text-orange-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">HTML</h3>
+          <p>Markup language for creating web structures.</p>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="relative group">
+        <img
+          src="./img/css.svg"
+          alt="CSS"
+          class="w-16 h-16 text-gray-400 group-hover:text-blue-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">CSS</h3>
+          <p>Styling language for designing websites.</p>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="relative group">
+        <img
+          src="./img/javascript.svg"
+          alt="JavaScript"
+          class="w-24 h-24 text-gray-400 group-hover:text-yellow-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">JavaScript</h3>
+          <p>Programming language for interactive web experiences.</p>
+        </div>
+      </div>
+
+      <!-- PHP Laravel -->
+      <div class="relative group">
+        <img
+          src="./img/laravel.svg"
+          alt="PHP Laravel"
+          class="w-16 h-16 text-gray-400 group-hover:text-indigo-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">PHP Laravel</h3>
+          <p>Backend framework for web applications.</p>
+        </div>
+      </div>
+
+      <!-- Next.js -->
+      <div class="relative group">
+        <img
+          src="./img/nextjs.svg"
+          alt="Next.js"
+          class="w-16 h-16 text-gray-400 group-hover:text-teal-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">Next.js</h3>
+          <p>React framework for server-side rendering and static sites.</p>
+        </div>
+      </div>
+
+      <!-- Video Editing -->
+      <div class="relative group">
+        <img
+          src="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/svg/regular/bx-video.svg"
+          alt="Video Editing"
+          class="w-16 h-16 text-gray-400 group-hover:text-red-500 transition-all duration-300"
+        />
+        <!-- Tooltip -->
+        <div
+          class="absolute bottom-20 left-1/2 -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-white text-gray-800 text-sm shadow-lg rounded-md p-3 transition-all duration-300"
+        >
+          <h3 class="font-bold mb-1">Video Editing</h3>
+          <p>Creating and editing visual media content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
       <!-- Projects Section -->
       <section id="projects" class="min-h-screen py-16">
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+        <div class="section container mx-auto px-6 md:px-12 lg:px-20">
           <h2 class="text-3xl font-bold text-center mb-6">Projects</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white shadow-md rounded-lg overflow-hidden">
@@ -250,23 +354,9 @@
           </div>
         </div>
       </section>
-
-      <!-- Skills Section -->
-      <section id="skills" class="min-h-screen py-16">
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
-          <h2 class="text-3xl font-bold text-center mb-6">Skills</h2>
-          <div class="flex flex-wrap justify-center gap-6">
-            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 1</span>
-            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 2</span>
-            <span class="px-4 py-2 bg-gray-200 rounded text-gray-800 font-medium">Skill 3</span>
-            <!-- Add more skills as needed -->
-          </div>
-        </div>
-      </section>
-
       <!-- Contact Section -->
       <section id="contact" class="min-h-screen py-16">
-        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+        <div class="section container mx-auto px-6 md:px-12 lg:px-20">
           <h2 class="text-3xl font-bold text-center mb-6">Contact</h2>
           <form action="#" method="POST" class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md">
             <div class="mb-4">
